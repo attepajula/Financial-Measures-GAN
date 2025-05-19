@@ -42,8 +42,8 @@ if __name__ == "__main__":
     parser.add_argument('--output',   default='data_normalized.csv')
     parser.add_argument('--scalers',  default='scalers.pkl')
     parser.add_argument('--method',   default='iqr')
-    parser.add_argument('--threshold',type=float, default=0.5)
+    parser.add_argument('--threshold',type=float, default=1.5)
     args = parser.parse_args()
     normalize(args.input, args.output, args.scalers, args.method, args.threshold)
 
-# python normalize_data.py --input data.csv --output data_normalized.csv --scalers scalers.pkl --method iqr --threshold 0.5
+# python normalize_data.py --input data.csv --output data_normalized.csv --scalers scalers.pkl --method iqr --threshold 1
