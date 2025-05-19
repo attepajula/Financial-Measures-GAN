@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from torch.utils.data import DataLoader, TensorDataset
 from scipy.stats import skew, kurtosis
 
-# Suositeltu suorituskykyasetus A5000:lle
+# ❗️FOR RTX A5000❗️
 torch.set_float32_matmul_precision('high')
 
 # --------------------------- Models -----------------------------------------
